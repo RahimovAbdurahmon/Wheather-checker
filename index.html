@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHECK WEATHER</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div
+        class="place"
+        style="font-size: 30px; font-weight: 600; text-align: end; color: white"
+      >
+        <i class="fa-solid fa-location-dot" style="margin-right: 10px"></i>
+        <h4 style="display: inline;" class="place">Dushnbe,TJ</h4>
+      </div>
+      <div class="term-time">
+        <div class="term">
+          <i
+            class="bi bi-brightness-high"
+            style="text-align: start; font-size: 40px; color: white"></i>
+          <h1 style="font-size: 60px; color: white" id="term">29°c</h1>
+          <h2 style="color: white">Sunny</h2>
+        </div>
+        <div class="time">
+          <h2 style="color: white; margin-bottom: 10px; font-weight: 600" class="week">
+            Tuesday
+          </h2>
+          <h3 style="color: white" class="date">10 Jun 2023</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="search">
+      <form class="form">
+        <input type="text" class="inpSearch" placeholder="Search" />
+        <button style="border: none;background-color: transparent;" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+      </form>
+    </div>
+
+    <div class="details">
+      <div style="display: flex; gap: 10px">
+        <i class="fa-solid fa-cloud-rain" style="font-size: 50px"></i>
+        <div>
+          <h2 style="font-size: 30px; margin-bottom: 5px" class="humidity">42%</h2>
+          <h4>HUMIDITY</h4>
+        </div>
+      </div>
+      <div style="display: flex; gap: 10px">
+        <i class="fa-solid fa-wind" style="font-size: 50px"></i>
+        <div>
+          <h2 style="font-size: 30px; margin-bottom: 5px" class="wind">3 km/h</h2>
+          <h4>WIND</h4>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
